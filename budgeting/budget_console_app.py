@@ -1,11 +1,12 @@
 import pandas as pd
-import pprint as p
+import numpy as np
 from datetime import datetime
+from datetime import timedelta
 
 print()
 print("1. Please put the CSV statement file in the folder where this budget_console_app is located. \n")
 
-file_path = input("2. Enter name of the csv file, including the extension: ")
+file_path = input("2. Enter name of the csv file, including the extension (if does not work, copy and paste file path here): ")
 df = pd.read_csv(file_path, skiprows = [0, 1])
 
 df[['Date Posted']] = df[['Date Posted']].applymap(str).applymap(lambda s: datetime.strptime(s, "%Y%m%d").date())
@@ -58,15 +59,21 @@ categories_dict = {
 p_cols = [df.columns, 'label']
 p_df = pd.DataFrame(columns = p_cols)
 
+'''find index of the first row that contains p_date_start'''
+row_start = df.index[df['Date Posted'] == p_date_start]
 
-for index, row in df.iloc[p_date_start : p_date_end + 1].iterrows(): 
-    print(row)
-    
+'''find index of the last row that contains p_date_end'''
+row_end = df[df['Date Posted'] == p_date_end].last_valid_index()
+
+'''Enter label information and store to dataframe, from row_start to row_end'''
 
 
+'''Enter label information from second row of p_date_end to the last row that has p_date_end'''
+
+'''Prompt to create new csv file to save record or append to previous csv file'''
 
 
-
+'''Display spending by category from personal csv record'''
 
 
 
