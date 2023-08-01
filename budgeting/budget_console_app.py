@@ -10,6 +10,7 @@ file_path = input("2. Enter name of the csv file, including the extension (if do
 df = pd.read_csv(file_path, skiprows = [0, 1])
 
 df[['Date Posted']] = df[['Date Posted']].applymap(str).applymap(lambda s: datetime.strptime(s, "%Y%m%d").date())
+df['label'] = np.nan
 
 s_date_start = df.loc[0, 'Date Posted']
 s_date_end = df['Date Posted'].iloc[-1]
@@ -18,7 +19,7 @@ print("*This statement contains transaction records from: " + str(s_date_start) 
 
 p_date_start = input("3. Enter start date as yyyy-mm-dd to save in personal record for further analysis: \n")
 p_date_start = datetime.strptime(p_date_start, "%Y-%m-%d").date()
-p_date_end = input("Enter end date: ")
+p_date_end = input("Enter end date: \n")
 p_date_end = datetime.strptime(p_date_end, "%Y-%m-%d").date()
 
 '''get a start date within the bounds from input and is also the nearest day to the start date in which transaction happens'''
@@ -40,8 +41,13 @@ if (df['Date Posted'] != p_date_end).all():
             p_date_end = prev_date
             break
 
+'''find index of the first row that contains p_date_start'''
+row_start = df[df['Date Posted'] == p_date_start].first_valid_index()
 
+'''find index of the last row that contains p_date_end'''
+row_end = df[df['Date Posted'] == p_date_end].last_valid_index()
 
+'''labels'''
 
 categories_dict = {
     'h' : "Hoyoverse Games",
@@ -53,22 +59,18 @@ categories_dict = {
     'd' : "drinks",
     'n' : "necessary food + drinks",
     'o' : "other",
-    'i' : "income"
+    'i' : "income", 
+    'u' : "undetermined"
 }
 
-p_cols = [df.columns, 'label']
-p_df = pd.DataFrame(columns = p_cols)
+'''Enter label information and store to df, from row_start to row_end'''
+for i in range(row_start, row_end + 1): 
+    print()
+    print("Labels: " + str(categories_dict))
+    print(df.iloc[i])
+    label = input("Enter label for current transaction: ")
+    df.at[i, 'label'] = label
 
-'''find index of the first row that contains p_date_start'''
-row_start = df.index[df['Date Posted'] == p_date_start]
-
-'''find index of the last row that contains p_date_end'''
-row_end = df[df['Date Posted'] == p_date_end].last_valid_index()
-
-'''Enter label information and store to dataframe, from row_start to row_end'''
-
-
-'''Enter label information from second row of p_date_end to the last row that has p_date_end'''
 
 '''Prompt to create new csv file to save record or append to previous csv file'''
 
