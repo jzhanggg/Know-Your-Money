@@ -1,0 +1,27 @@
+First Bank Card,Transaction Type,Date Posted, Transaction Amount,Description,label
+'5510290062995740',DEBIT,2023-07-10,883.71, calculated personal balance (based on previous remains + pay)                   ,i
+'5510290062995740',CREDIT,2023-07-10,3000.0,[CW]INTERAC ETRNSFR AD RECVD PEIYING                  20231902118AR7NGD        ,r
+'5510290062995740',DEBIT,2023-07-10,-34.64,[PR]SHOPPERS DRUG M                                                            ,n
+'5510290062995740',DEBIT,2023-07-12,-80.0,[PR]ESSO 7-ELEVEN 3                                                            ,c
+'5510290062995740',DEBIT,2023-07-13,-34.72,[PR]GACHA HOBBIES                                                              ,l
+'5510290062995740',DEBIT,2023-07-13,-10.49,[PR]GRAM CAFE   PAN                                                            ,l
+'5510290062995740',DEBIT,2023-07-14,-34.31,[OP]ONLINE PURCHASE 14JUL2023STEAMGAMES.COM 425952 WA                          ,g
+'5510290062995740',DEBIT,2023-07-17,-5.72,[PR]STARBUCKS 66551                                                            ,d
+'5510290062995740',CREDIT,2023-07-17,5.72,[EC]STARBUCKS 66551                                                            ,d
+'5510290062995740',DEBIT,2023-07-17,-5.72,[PR]STARBUCKS 66551                                                            ,d
+'5510290062995740',DEBIT,2023-07-17,-6.56,[PR]STARBUCKS 66551                                                            ,d
+'5510290062995740',DEBIT,2023-07-18,-6.79,[OP]ONLINE PURCHASE 17JUL2023MIHOYO LIMITED HKG                                ,h
+'5510290062995740',DEBIT,2023-07-19,-24.99,[OP]ONLINE PURCHASE 19JUL2023COGNOSPHERE PTE. LTD SGP                          ,h
+'5510290062995740',DEBIT,2023-07-21,-4.19,[PR]NATURE'S FARE M                                                            ,n
+'5510290062995740',CREDIT,2023-07-24,706.57,[CW]MOBILE CHEQUE DEPOSIT                                                      ,i
+'5510290062995740',DEBIT,2023-07-24,-600.0,[IB]           2142 WESTERN P                                                  ,h
+'5510290062995740',DEBIT,2023-07-24,-80.0,[PR]ELGIN ESSO                                                                 ,c
+'5510290062995740',DEBIT,2023-07-24,-6.35,[PR]STARBUCKS 66551                                                            ,d
+'5510290062995740',DEBIT,2023-07-24,-14.31,[OP]ONLINE PURCHASE 23JUL2023AMZN MKTP CA BK2A58SD ON                          ,o
+'5510290062995740',DEBIT,2023-07-25,-17.86,[CW]INTERAC ETRNSFR SENT     MICHELLE                 20232060327K4H9GQ        ,l
+'5510290062995740',DEBIT,2023-07-26,-658.0,[CW] TF 0782#8627-331                                                          ,sv
+'5510290062995740',DEBIT,2023-07-26,-7.0,[CW]INTERAC ETRNSFR SENT     MICHELLE                 20232071852VVA4CX        ,l
+'5510290062995740',DEBIT,2023-07-26,-60.0,[PR]ELGIN ESSO                                                                 ,c
+'5510290062995740',CREDIT,2023-07-28,269.12,[DN]BUY LOW FOODS   PAY/PAY                                                    ,i
+'5510290062995740',DEBIT,2023-07-28,-6.29,[PR]NATURE'S FARE M                                                            ,n
+'5510290062995740',DEBIT,2023-07-28,-10.74,[OP]ONLINE PURCHASE 28JUL2023AMZN MKTP CA TH7GX8CU ON                          ,o
