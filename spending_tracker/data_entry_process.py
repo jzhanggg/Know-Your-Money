@@ -32,7 +32,7 @@ if os.path.isfile(p_file_path):
     last_date = str(p_df['Date Posted'].iloc[-1])
     last_date = datetime.strptime(last_date, "%Y-%m-%d").date()
 
-    print("The last transaction found in personal record was on: " + str(last_date) + ". Do you want to use this as the starting date? \n")
+    print("The last transaction found in personal record was on: " + str(last_date) + ". Do you want to use the day after this as the starting date? \n")
     ans = input("Enter 'y' for yes, otherwise hit enter: ")
     
     if ans == 'y': 
@@ -56,32 +56,16 @@ else:
     p_date_end = datetime.strptime(p_date_end, "%Y-%m-%d").date()
 
 #get a start date within the bounds from input and is also the nearest day to the start date in which transaction happens
-if (df['Date Posted'] != p_date_start).all(): 
-    next_date = None
-    for date in df['Date Posted']: 
-        if date > p_date_start: 
-            next_date = date
-            p_date_start = next_date
-            break  
+p_date_start = get_start_date(df['Date Posted'], p_date_start)
 
 #get an end date within the bounds from input and is also the nearest day to the end date in which day in which transaction happens
-if (df['Date Posted'] != p_date_end).all(): 
-    prev_date = None
-    for date in df['Date Posted']: 
-        if date < p_date_end: 
-            prev_date = date
-        else: 
-            p_date_end = prev_date
-            break
+p_date_end = get_end_date(df["Date Posted"], p_date_end)
 
 #find index of the first row that contains p_date_start
 row_start = df[df['Date Posted'] == p_date_start].first_valid_index()
 
 #find index of the last row that contains p_date_end
 row_end = df[df['Date Posted'] == p_date_end].last_valid_index()
-
-#labels
-
 
 #Enter label information and store to df, from row_start to row_end
 for i in range(row_start, row_end + 1): 

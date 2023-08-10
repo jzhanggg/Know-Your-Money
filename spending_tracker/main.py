@@ -13,9 +13,9 @@ def selector():
     selector = input("SELECT WHAT TO DO: \n \
                      Enter '1' for transaction entry through csv statement file \n \
                      Enter '2' to see spending overview: by category and income vs. expense\n \
-                     Enter '3' to extract record for selected categories\n \
+                     Enter '3' to extract record for selected categories and date\n \
                      Enter '4' to compare total expense across each monthly period \n \
-                     Enter '6' to see undetermined items and add description \n \
+                     Enter '5' to see undetermined items and add description \n \
                      Enter 'q' to quit: \n")
     return selector
 
@@ -29,8 +29,8 @@ while user_sel != 'q':
         subprocess.run(["python", dep_path])
 
     elif user_sel == '2': 
-        print('run 2 \n')
-        print(spending_overview())
+        spending_overview()
+
     elif user_sel == '3': 
         print('run 3\n')
     elif user_sel == '4': 

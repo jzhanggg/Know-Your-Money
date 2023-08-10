@@ -8,7 +8,7 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 p_file_path = os.path.join(current_directory, "personal_record.csv")
 p_df = pd.read_csv(p_file_path)
 
-# 1. expense across all categories for all transactions in record
+# 2. spending overview
 def spending_overview(): 
     grouped_df = p_df.groupby('label')[' Transaction Amount'].sum().reset_index()
     grouped_df = grouped_df.fillna(0)
@@ -27,7 +27,6 @@ def spending_overview():
             selected_row = grouped_df[condition]
             personal_sum = personal_sum + selected_row[' Transaction Amount'].values[0]
 
-
     grouped_df['label'] = grouped_df['label'].replace(categories_dict)
 
     print("SPENDING OVERVIEW: ")
@@ -36,9 +35,11 @@ def spending_overview():
     print("COVERED BALANCE: $" + str(round(covered_sum, 2)))
     print("PERSONAL BALANCE: $" + str(round(personal_sum, 2)))
 
-    if  (grouped_df['label'] == label).any(): 
+    if  (grouped_df['label'] == 'undetermined, ATTENTION NEEDED').any(): 
         print("There is undetermined spending/income, resolve ASAP. ")
-    
+
+# 3. Extract record for selected categories and date
+
 
 
 
