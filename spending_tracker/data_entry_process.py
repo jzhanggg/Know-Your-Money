@@ -91,13 +91,7 @@ else:
     print()
     print("PERSONAL RECORD INITIALIZED, ABOVE ENTRIES ADDED TO PERSONAL RECORD. \n")
 
-#Display spending by category from personal csv record
 
-
-
-#Error handling: throw messages
-
-# develop GUI? 
 
 
 
