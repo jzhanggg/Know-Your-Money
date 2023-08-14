@@ -8,19 +8,19 @@ categories_dict = {
     'l' : "leisure events",
     's' : "study",
     'm' : "music",
-    'd' : "drinks",
+    'd' : "drinks personal",
+    'f' : "food personal",
     'n' : "necessary items/fees",
     'o' : "other personal items/fees",
     'i' : "income", 
     'r' : "reimbursement from dad",
     'sv' : "savings: transferred to savings acc",
-    'u' : "undetermined, ATTENTION NEEDED"
 }
 
 covered_balance = ['n', 's', 'r', 'c']
-personal_balance = ['h', 'g', 'l', 'm', 'd', 'o', 'i', 'sv']
-temp_exclusion = ['u']
+personal_balance = ['h', 'g', 'l', 'm', 'd', 'f', 'o', 'i', 'sv']
 
+#get a start date within the bounds from input and is also the nearest day to the start date in which transaction happens
 def get_start_date(df_date_col, given_start_date):
     if (df_date_col != given_start_date).all(): 
         next_date = None
@@ -29,6 +29,7 @@ def get_start_date(df_date_col, given_start_date):
                 return date 
     return given_start_date
 
+#get an end date within the bounds from input and is also the nearest day to the end date in which day in which transaction happens
 def get_end_date(df_date_col, given_end_date):           
     if (df_date_col != given_end_date).all(): 
         prev_date = None
@@ -38,3 +39,5 @@ def get_end_date(df_date_col, given_end_date):
             else: 
                 return prev_date
     return given_end_date
+
+

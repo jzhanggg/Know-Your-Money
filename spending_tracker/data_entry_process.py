@@ -55,10 +55,7 @@ else:
     p_date_end = input("Enter end date: \n")
     p_date_end = datetime.strptime(p_date_end, "%Y-%m-%d").date()
 
-#get a start date within the bounds from input and is also the nearest day to the start date in which transaction happens
 p_date_start = get_start_date(df['Date Posted'], p_date_start)
-
-#get an end date within the bounds from input and is also the nearest day to the end date in which day in which transaction happens
 p_date_end = get_end_date(df["Date Posted"], p_date_end)
 
 #find index of the first row that contains p_date_start
