@@ -8,13 +8,8 @@ from shared_info import *
 print()
 print("1. Please put the CSV statement file in the folder where this budget_console_app is located. \n")
 
-p_filename = 'personal_record.csv'
 statement_filename = input("2. Enter name of the csv file, including the extension: \n")
-
-current_directory = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(current_directory, statement_filename)
-p_file_path = os.path.join(current_directory, p_filename)
-
 
 df = pd.read_csv(file_path, skiprows = [0, 1])
 

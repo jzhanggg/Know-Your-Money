@@ -1,5 +1,11 @@
-from datetime import date
-from datetime import timedelta
+from datetime import datetime
+import os
+
+
+p_filename = 'personal_record.csv'
+current_directory = os.path.dirname(os.path.abspath(__file__))
+p_file_path = os.path.join(current_directory, p_filename)
+
 
 categories_dict = {
     'h' : "Hoyoverse Games",
@@ -39,5 +45,3 @@ def get_end_date(df_date_col, given_end_date):
             else: 
                 return prev_date
     return given_end_date
-
-

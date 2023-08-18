@@ -10,7 +10,6 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 p_file_path = os.path.join(current_directory, "personal_record.csv")
 p_df = pd.read_csv(p_file_path)
 p_df[['Date Posted']] = p_df[['Date Posted']].applymap(str).applymap(lambda s: datetime.strptime(s, "%Y-%m-%d").date())
-p_df['Date Posted'] = pd.to_datetime(p_df['Date Posted'])
 
 def get_covered_balance(g_df): 
     covered_sum = 0
@@ -77,7 +76,7 @@ def extract_within_range(selected_labels_list, str_given_start, str_given_end):
     return extracted_df
 
 # 4. Save newest monthly data to csv
-def save_month_data(): 
+def calc_month_data(): 
     unique_months = p_df['Date Posted'].dt.to_period('M').unique()
 
     columns = list(categories_dict.values())
@@ -117,11 +116,6 @@ def save_month_data():
 
     
     return month_df
-
-
-print(save_month_data())
-
-
 
 # 5. Display monthly spending by category by month
 
