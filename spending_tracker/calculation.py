@@ -3,6 +3,8 @@ import numpy as np
 import os
 from datetime import datetime
 from shared_info import *
+import tkinter as tk
+from tkinter import scrolledtext
 
 #if p_df does not exist run data entry process
 
@@ -76,8 +78,17 @@ def extract_within_range(selected_labels_list, str_given_start, str_given_end):
     return extracted_df
 
 # 4. Save newest monthly data to csv
-def calc_month_data(): 
-    unique_months = p_df['Date Posted'].dt.to_period('M').unique()
+def calc_month_data(str_date_start = None, str_date_end = None): 
+    
+    if str_date_start is None and str_date_end is None:  
+        filtered_df = p_df
+    else: 
+        date_start = datetime.strptime(str_date_start, "%Y-%m-%d").date()
+        date_end = datetime.strptime(str_date_end, "%Y-%m-%d").date()
+        filtered_df = p_df[(p_df['Date Posted'] >= date_start) & (p_df['Date Posted'] <= date_end)]
+    
+    filtered_df['Date Posted'] = pd.to_datetime(filtered_df['Date Posted'])
+    unique_months = filtered_df['Date Posted'].dt.to_period('M').unique()
 
     columns = list(categories_dict.values())
     columns.append("Covered Balance")
@@ -88,36 +99,41 @@ def calc_month_data():
     month_df_i_count = 0
 
     for month in unique_months: 
-        month_df = month_df.append(pd.Series([0] * len(columns), index=columns), ignore_index=True)
-        condition = p_df['Date Posted'].dt.to_period('M') == month
-        sec_df = p_df[condition]
-        grouped_df = sec_df.groupby('label')[' Transaction Amount'].sum().reset_index()
+        month_df = month_df._append(pd.Series([0] * len(columns), index=columns), ignore_index=True)
+        condition = filtered_df['Date Posted'].dt.to_period('M') == month
+        sec_df = filtered_df[condition]
+        sec_grouped_df = sec_df.groupby('label')[' Transaction Amount'].sum().reset_index()
 
-        covered_sum = get_covered_balance(grouped_df)
-        personal_sum = get_personal_balance(grouped_df)
+        condition_accum = filtered_df['Date Posted'].dt.to_period('M') <= month
+        accum_df = filtered_df[condition_accum]
+        accum_g_df = accum_df.groupby('label')[' Transaction Amount'].sum().reset_index()
+
+        covered_sum = get_covered_balance(accum_g_df)
+        personal_sum = get_personal_balance(accum_g_df)
         month_df.loc[month_df_i_count, 'Covered balance'] = covered_sum
         month_df.loc[month_df_i_count, 'Personal balance'] = personal_sum
         month_df.loc[month_df_i_count, 'Month'] = str(month)
 
+        sec_grouped_df['label'] = sec_grouped_df['label'].replace(categories_dict)
 
-        grouped_df['label'] = grouped_df['label'].replace(categories_dict)
+        sec_grouped_df = sec_grouped_df.T
 
-        grouped_df = grouped_df.T
-
-        new_cols = grouped_df.iloc[0]
-        grouped_df = grouped_df.iloc[1:].reset_index(drop = True)
-        grouped_df.columns = new_cols
+        new_cols = sec_grouped_df.iloc[0]
+        sec_grouped_df = sec_grouped_df.iloc[1:].reset_index(drop = True)
+        sec_grouped_df.columns = new_cols
         
-        for category in grouped_df.columns: 
+        for category in sec_grouped_df.columns: 
             if category in month_df.columns: 
-                month_df.loc[month_df_i_count, category] = grouped_df.loc[0, category]
+                month_df.loc[month_df_i_count, category] = sec_grouped_df.loc[0, category]
 
         month_df_i_count = month_df_i_count + 1
-
     
     return month_df
 
-# 5. Display monthly spending by category by month
+
+            
+
+
 
 
 

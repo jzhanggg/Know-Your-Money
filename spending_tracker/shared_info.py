@@ -6,6 +6,11 @@ p_filename = 'personal_record.csv'
 current_directory = os.path.dirname(os.path.abspath(__file__))
 p_file_path = os.path.join(current_directory, p_filename)
 
+m_file_name = 'monthly_record.csv'
+m_file_path = os.path.join(current_directory, m_file_name)
+
+dep = "data_entry_process.py"
+dep_path = os.path.join(current_directory, dep)
 
 categories_dict = {
     'h' : "Hoyoverse Games",

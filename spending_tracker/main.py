@@ -2,15 +2,34 @@ import subprocess
 import os
 import csv
 from datetime import datetime
+import tkinter as tk
+from tkinter import ttk
+from pandastable import Table
+
 from shared_info import *
 
-dep = "data_entry_process.py"
-dep_path = os.path.join(current_directory, dep)
-
+# write documentation
+# possibly make gui with tkinter
 # ERROR HANDLE: throw error for date entered out of bound, ask user to input correct date in range and display date range in record
 # problems solve: quit anywhere during the process
 # problem solve: after data entry, must restart entire program to ensure that data is updated
-# problem solve: table too wide, does not show in cosole, need pop up
+
+# Display monthly data 
+class DataFrameTableApp(tk.Frame):
+    def __init__(self, parent=None, dataframe=None):
+        tk.Frame.__init__(self, parent)
+        self.dataframe = dataframe
+        self.parent = parent
+        self.main = self._frame = ttk.Frame(self.parent)
+        self.main.pack(fill='both', expand=True)
+
+        # Create a frame to hold the table
+        self.table_frame = ttk.Frame(self.main)
+        self.table_frame.pack(fill='both', expand=True)
+
+        # Create the table using PandasTable
+        self.table = Table(self.table_frame, dataframe=self.dataframe, cellwidth = 250, cellheight = 30)
+        self.table.show()
 
 
 def selector(): 
@@ -66,47 +85,57 @@ if os.path.isfile(p_file_path):
             print("THE SUMMED BALANCE OF THE ABOVE CATEGORIES IS:  $" + str(extracted_df[' Transaction Amount'].sum()) + ". \n")
                 
         elif user_sel == '4': 
-            m_file_name = 'monthly_record.csv'
-            m_file_path = os.path.join(current_directory, m_file_name)
+
             
             if os.path.isfile(m_file_path): 
                 print()
                 m_df = pd.read_csv(m_file_path)
                 last_month = str(m_df['Month'].iloc[-1])
                 day = 1
-                last_month_date = datetime.strptime(f"{last_month}-{day}", "%Y-%m-%d")
+                last_month_date = datetime.strptime(f"{last_month}-{day}", "%Y-%m-%d").date()
                 
                 most_recent_date = str(p_df['Date Posted'].iloc[-1])
                 most_recent_date = datetime.strptime(most_recent_date, "%Y-%m-%d").date()
                 
-                start_date = get_start_date(p_df['Date Posted'], last_month_date)
-                end_date = get_end_date(p_df['Date Posted'], most_recent_date)
+                start_date = str(get_start_date(p_df['Date Posted'], last_month_date))
+                end_date = str(get_end_date(p_df['Date Posted'], most_recent_date))
                 
                 added_month_df = calc_month_data(start_date, end_date)
                 
                 m_df.drop(m_df.index[-1], inplace=True)
                 
-                m_df = m_df.append(added_month_df, ignore_index=True)
-                
-                
+                m_df = m_df._append(added_month_df, ignore_index=True)
                 
                 #very unfinished, replace old m_df csv with new one
-                
-
-                
+                                
             else: 
-                print("monthly file does not exist \n")
-                #create new monthly data file
-                
+                print("monthly file initiated. \n")
                 m_df = calc_month_data()
-                
-                
-                m_df.to_csv(p_file_path, index = False)
+            
+            m_df.to_csv(m_file_path, index = False)
                 
             
         
         elif user_sel == '5': 
-            print("5 \n")
+
+            if os.path.isfile(m_file_path): 
+                display_df = pd.read_csv(m_file_path)
+                display_df = display_df.applymap(lambda x: '{:.2f}'.format(x) if isinstance(x, (int, float)) else x)
+
+                pd.set_option('display.float_format',lambda x: '%.3f' % x)
+                root = tk.Tk()
+                root.title("Spending Data By Month")
+                app = DataFrameTableApp(root, dataframe=display_df)
+                
+                app.pack(fill='both', expand=True)
+
+                root.mainloop()
+
+
+            else: 
+                print("Monthly record file does not exist, cannot display. \n")
+                
+
             
         elif user_sel == 'q': 
             break      
@@ -118,11 +147,6 @@ else:
     
     if ans == 'y': 
         subprocess.run(["python", dep_path])
-
-
-
-
-
 
 
 

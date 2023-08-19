@@ -68,13 +68,10 @@ First Bank Card,Transaction Type,Date Posted, Transaction Amount,Description,lab
 '5510290062995740',DEBIT,2023-08-11,-3.0,[OP]ONLINE PURCHASE 10AUG2023CITY OF WHITE ROCK -  BC                          ,l
 '5510290062995740',CREDIT,2023-08-11,703.0,[DN]BUY LOW FOODS   PAY/PAY                                                    ,i
 '5510290062995740',DEBIT,2023-08-11,-3.0,[OP]ONLINE PURCHASE 10AUG2023CITY OF WHITE ROCK-PA BC                          ,l
-'5510290062995740',CREDIT,2023-08-11,703.0,[DN]BUY LOW FOODS   PAY/PAY                                                    ,
-'5510290062995740',DEBIT,2023-08-11,-3.0,[OP]ONLINE PURCHASE 10AUG2023CITY OF WHITE ROCK -  BC                          ,
-'5510290062995740',DEBIT,2023-08-11,-3.0,[OP]ONLINE PURCHASE 10AUG2023CITY OF WHITE ROCK-PA BC                          ,
 '5510290062995740',DEBIT,2023-08-14,-4.19,[PR]NATURE'S FARE M                                                            ,f
 '5510290062995740',DEBIT,2023-08-14,-0.85,[PR]NATURE'S FARE M                                                            ,f
 '5510290062995740',DEBIT,2023-08-14,-3.6,[PR]NATURE'S FARE M                                                            ,f
-'5510290062995740',DEBIT,2023-08-14,-27.3,[PR]J.SWEETS STORE                                                             ,o
+'5510290062995740',DEBIT,2023-08-14,-27.3,[PR]J.SWEETS STORE                                                             ,f
 '5510290062995740',CREDIT,2023-08-16,1250.0,[CW]MOBILE CHEQUE DEPOSIT                                                      ,i
 '5510290062995740',DEBIT,2023-08-16,-12.35,[PR]UP EXPRESS PEAR                                                            ,c
 '5510290062995740',DEBIT,2023-08-16,-24.0,[PR]PRESTO UNION ST                                                            ,c
@@ -83,4 +80,4 @@ First Bank Card,Transaction Type,Date Posted, Transaction Amount,Description,lab
 '5510290062995740',DEBIT,2023-08-16,-6.79,[OP]ONLINE PURCHASE 15AUG2023MIHOYO LIMITED HKG                                ,h
 '5510290062995740',DEBIT,2023-08-17,-30.28,[PR]MR TONKATSU                                                                ,f
 '5510290062995740',DEBIT,2023-08-17,-3.0,[CW]INTERAC ETRNSFR SENT     AMYYYYYY                 20232291906DW22S2        ,f
-'5510290062995740',DEBIT,2023-08-17,-9.15,[PR]CHAPAYOM                                                                   ,d
+'5510290062995740',DEBIT,2023-08-17,-9.15,[PR]CHAPAYOM                                                                  ,d

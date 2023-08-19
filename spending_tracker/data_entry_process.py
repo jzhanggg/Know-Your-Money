@@ -71,7 +71,7 @@ for i in range(row_start, row_end + 1):
 new_df = df.loc[row_start:row_end].copy()
 
 #In case if I get a new card some time later
-new_df = df.sort_values(by = 'Date Posted')
+new_df = new_df.sort_values(by = 'Date Posted')
 
 #Prompt to create new csv file to save record or append to previous csv file
 if os.path.isfile(p_file_path): 
