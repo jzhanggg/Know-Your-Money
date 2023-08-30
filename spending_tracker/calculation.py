@@ -35,11 +35,22 @@ def get_personal_balance(g_df):
 
     return personal_sum
 
+def get_savings(g_df): 
+    savings = 0
+    
+    for label in g_df['label']:
+        if label in ['sv', 'osv']: 
+            condition = g_df['label'] == label
+            selected_row = g_df[condition]
+            savings = savings - selected_row[' Transaction Amount'].values[0]
+
+    return savings
+
+    
 
 # 2. spending overview
 def spending_overview(): 
     grouped_df = p_df.groupby('label')[' Transaction Amount'].sum().reset_index()
-    #grouped_df = grouped_df.fillna(0)
 
     covered_sum = get_covered_balance(grouped_df)
     personal_sum = get_personal_balance(grouped_df)
@@ -87,12 +98,14 @@ def calc_month_data(str_date_start = None, str_date_end = None):
         date_end = datetime.strptime(str_date_end, "%Y-%m-%d").date()
         filtered_df = p_df[(p_df['Date Posted'] >= date_start) & (p_df['Date Posted'] <= date_end)]
     
-    filtered_df['Date Posted'] = pd.to_datetime(filtered_df['Date Posted'])
-    unique_months = filtered_df['Date Posted'].dt.to_period('M').unique()
+    filtered_df.loc[:, 'Date Posted'] = pd.to_datetime(filtered_df['Date Posted'])
+    unique_months = pd.to_datetime(filtered_df['Date Posted']).dt.to_period('M').unique()
 
     columns = list(categories_dict.values())
-    columns.append("Covered Balance")
-    columns.append("Personal Balance")
+    
+    columns.append("Covered balance")
+    columns.append("Personal balance")
+    columns.append("Savings")
     columns.insert(0, "Month")
     month_df = pd.DataFrame(columns = columns)
 
@@ -100,18 +113,21 @@ def calc_month_data(str_date_start = None, str_date_end = None):
 
     for month in unique_months: 
         month_df = month_df._append(pd.Series([0] * len(columns), index=columns), ignore_index=True)
-        condition = filtered_df['Date Posted'].dt.to_period('M') == month
+        condition = pd.to_datetime(filtered_df['Date Posted']).dt.to_period('M') == month
         sec_df = filtered_df[condition]
         sec_grouped_df = sec_df.groupby('label')[' Transaction Amount'].sum().reset_index()
 
-        condition_accum = filtered_df['Date Posted'].dt.to_period('M') <= month
-        accum_df = filtered_df[condition_accum]
+        condition_accum = pd.to_datetime(p_df['Date Posted']).dt.to_period('M') <= month
+        accum_df = p_df[condition_accum]
         accum_g_df = accum_df.groupby('label')[' Transaction Amount'].sum().reset_index()
 
         covered_sum = get_covered_balance(accum_g_df)
         personal_sum = get_personal_balance(accum_g_df)
+        savings = get_savings(accum_g_df)
         month_df.loc[month_df_i_count, 'Covered balance'] = covered_sum
         month_df.loc[month_df_i_count, 'Personal balance'] = personal_sum
+        month_df.loc[month_df_i_count, 'Savings'] = savings
+
         month_df.loc[month_df_i_count, 'Month'] = str(month)
 
         sec_grouped_df['label'] = sec_grouped_df['label'].replace(categories_dict)
@@ -130,8 +146,20 @@ def calc_month_data(str_date_start = None, str_date_end = None):
     
     return month_df
 
-
             
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

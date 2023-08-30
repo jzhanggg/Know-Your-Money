@@ -15,7 +15,7 @@ dep_path = os.path.join(current_directory, dep)
 categories_dict = {
     'h' : "Hoyoverse Games",
     'g' : "Non-Hoyoverse Games",
-    'c' : "car",
+    'c' : "car/transport",
     'l' : "leisure events",
     's' : "study",
     'm' : "music",
@@ -26,10 +26,11 @@ categories_dict = {
     'i' : "income", 
     'r' : "reimbursement from dad",
     'sv' : "savings: transferred to savings acc",
+    'osv' : "out of savings: to chequing" 
 }
 
 covered_balance = ['n', 's', 'r', 'c']
-personal_balance = ['h', 'g', 'l', 'm', 'd', 'f', 'o', 'i', 'sv']
+personal_balance = ['h', 'g', 'l', 'm', 'd', 'f', 'o', 'i', 'sv', 'osv']
 
 #get a start date within the bounds from input and is also the nearest day to the start date in which transaction happens
 def get_start_date(df_date_col, given_start_date):

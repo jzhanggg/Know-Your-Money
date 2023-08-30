@@ -1,0 +1,6 @@
+write documentation
+manual input function implement 
+possibly make gui with tkinter
+ERROR HANDLE: throw error for date entered out of bound, ask user to input correct date in range and display date range in record
+problems: quit anywhere during the process
+problem: after data entry, must restart entire program to ensure that data is updated

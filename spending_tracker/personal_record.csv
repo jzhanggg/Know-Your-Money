@@ -1,83 +1,123 @@
 First Bank Card,Transaction Type,Date Posted, Transaction Amount,Description,label
-'5510290062995740',calculated,2023-07-10,4225.71,calculated balance (from previous remains)                          ,i
-'5510290062995740',calculated,2023-07-10,-3342.0,calculated transferred to savings                          ,sv
-'5510290062995740',CREDIT,2023-07-10,3000.0,[CW]INTERAC ETRNSFR AD RECVD PEIYING                  20231902118AR7NGD        ,r
-'5510290062995740',DEBIT,2023-07-10,-34.64,[PR]SHOPPERS DRUG M                                                            ,n
-'5510290062995740',DEBIT,2023-07-12,-80.0,[PR]ESSO 7-ELEVEN 3                                                            ,c
-'5510290062995740',DEBIT,2023-07-13,-34.72,[PR]GACHA HOBBIES                                                              ,l
-'5510290062995740',DEBIT,2023-07-13,-10.49,[PR]GRAM CAFE   PAN                                                            ,f
-'5510290062995740',DEBIT,2023-07-14,-34.31,[OP]ONLINE PURCHASE 14JUL2023STEAMGAMES.COM 425952 WA                          ,g
-'5510290062995740',DEBIT,2023-07-17,-5.72,[PR]STARBUCKS 66551                                                            ,d
-'5510290062995740',DEBIT,2023-07-17,-6.56,[PR]STARBUCKS 66551                                                            ,d
-'5510290062995740',DEBIT,2023-07-17,-5.72,[PR]STARBUCKS 66551                                                            ,d
-'5510290062995740',CREDIT,2023-07-17,5.72,[EC]STARBUCKS 66551                                                            ,d
-'5510290062995740',DEBIT,2023-07-18,-6.79,[OP]ONLINE PURCHASE 17JUL2023MIHOYO LIMITED HKG                                ,h
-'5510290062995740',DEBIT,2023-07-19,-24.99,[OP]ONLINE PURCHASE 19JUL2023COGNOSPHERE PTE. LTD SGP                          ,h
-'5510290062995740',DEBIT,2023-07-21,-4.19,[PR]NATURE'S FARE M                                                            ,f
-'5510290062995740',CREDIT,2023-07-24,706.57,[CW]MOBILE CHEQUE DEPOSIT                                                      ,i
-'5510290062995740',DEBIT,2023-07-24,-600.0,[IB]           2142 WESTERN P                                                  ,h
-'5510290062995740',DEBIT,2023-07-24,-80.0,[PR]ELGIN ESSO                                                                 ,c
-'5510290062995740',DEBIT,2023-07-24,-6.35,[PR]STARBUCKS 66551                                                            ,d
-'5510290062995740',DEBIT,2023-07-24,-14.31,[OP]ONLINE PURCHASE 23JUL2023AMZN MKTP CA BK2A58SD ON                          ,o
-'5510290062995740',DEBIT,2023-07-25,-17.86,[CW]INTERAC ETRNSFR SENT     MICHELLE                 20232060327K4H9GQ        ,l
-'5510290062995740',DEBIT,2023-07-26,-60.0,[PR]ELGIN ESSO                                                                 ,c
-'5510290062995740',DEBIT,2023-07-26,-658.0,[CW] TF 0782#8627-331                                                          ,sv
-'5510290062995740',DEBIT,2023-07-26,-7.0,[CW]INTERAC ETRNSFR SENT     MICHELLE                 20232071852VVA4CX        ,l
-'5510290062995740',CREDIT,2023-07-28,269.12,[DN]BUY LOW FOODS   PAY/PAY                                                    ,i
-'5510290062995740',DEBIT,2023-07-28,-6.29,[PR]NATURE'S FARE M                                                            ,f
-'5510290062995740',DEBIT,2023-07-28,-10.74,[OP]ONLINE PURCHASE 28JUL2023AMZN MKTP CA TH7GX8CU ON                          ,o
-'5510290062995740',DEBIT,2023-07-31,-11.95,[SC]PLUS PLAN                                                                  ,n
-'5510290062995740',DEBIT,2023-07-31,-4.19,[PR]NATURE'S FARE M                                                            ,f
-'5510290062995740',DEBIT,2023-07-31,-1.67,[PR]NATURE'S FARE M                                                            ,f
-'5510290062995740',DEBIT,2023-07-31,-4.39,[PR]NATURE'S FARE M                                                            ,f
-'5510290062995740',DEBIT,2023-07-31,-60.0,[CW]INTERAC ETRNSFR SENT     SHANG                    20232120212DRFDMJ        ,c
-'5510290062995740',DEBIT,2023-07-31,-5.72,[PR]STARBUCKS 66551                                                            ,d
-'5510290062995740',DEBIT,2023-07-31,-8.75,[SC]EXCESS ITEMS  07 AT $1.25                                                  ,n
-'5510290062995740',DEBIT,2023-08-04,-7.82,[PR]SAVE ON FOODS #                                                            ,d
-'5510290062995740',CREDIT,2023-08-08,8.48,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
-'5510290062995740',CREDIT,2023-08-08,5.04,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
-'5510290062995740',CREDIT,2023-08-08,19.28,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
-'5510290062995740',DEBIT,2023-08-08,-122.12,[OP]ONLINE PURCHASE  6AUG2023TAOBAO.COM GBR                                    ,o
-'5510290062995740',DEBIT,2023-08-08,-80.0,[PR]CHV43076 67TH                                                              ,c
-'5510290062995740',CREDIT,2023-08-08,5.01,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
-'5510290062995740',CREDIT,2023-08-08,8.48,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
-'5510290062995740',DEBIT,2023-08-08,-118.19,[OP]ONLINE PURCHASE  5AUG2023TAOBAO.COM ENG                                    ,o
-'5510290062995740',CREDIT,2023-08-08,4.94,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
-'5510290062995740',CREDIT,2023-08-08,4.94,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
-'5510290062995740',CREDIT,2023-08-08,4.94,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
-'5510290062995740',CREDIT,2023-08-08,35.21,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
-'5510290062995740',CREDIT,2023-08-08,18.82,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
-'5510290062995740',DEBIT,2023-08-08,-120.08,[OP]ONLINE PURCHASE  5AUG2023TAOBAO.COM GBR                                    ,o
-'5510290062995740',CREDIT,2023-08-08,4.94,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
-'5510290062995740',CREDIT,2023-08-09,659.4,[CW]MOBILE CHEQUE DEPOSIT                                                      ,i
-'5510290062995740',DEBIT,2023-08-10,-129.99,[OP]ONLINE PURCHASE 10AUG2023COGNOSPHERE PTE. LTD SGP                          ,h
-'5510290062995740',DEBIT,2023-08-10,-129.99,[OP]ONLINE PURCHASE 10AUG2023COGNOSPHERE PTE. LTD SGP                          ,h
-'5510290062995740',DEBIT,2023-08-10,-129.99,[OP]ONLINE PURCHASE 10AUG2023COGNOSPHERE PTE. LTD SGP                          ,h
-'5510290062995740',DEBIT,2023-08-10,-129.99,[OP]ONLINE PURCHASE  9AUG2023COGNOSPHERE PTE. LTD. SGP                         ,h
-'5510290062995740',DEBIT,2023-08-10,-129.99,[OP]ONLINE PURCHASE  9AUG2023COGNOSPHERE PTE. LTD. SGP                         ,h
-'5510290062995740',CREDIT,2023-08-10,5.08,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
-'5510290062995740',CREDIT,2023-08-10,19.38,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
-'5510290062995740',CREDIT,2023-08-10,8.7,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
-'5510290062995740',CREDIT,2023-08-10,5.08,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
-'5510290062995740',CREDIT,2023-08-10,5.08,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
-'5510290062995740',CREDIT,2023-08-10,5.19,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
-'5510290062995740',CREDIT,2023-08-10,5.08,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
-'5510290062995740',CREDIT,2023-08-10,19.78,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
-'5510290062995740',CREDIT,2023-08-10,8.7,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
-'5510290062995740',CREDIT,2023-08-10,36.12,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
-'5510290062995740',DEBIT,2023-08-11,-3.0,[OP]ONLINE PURCHASE 10AUG2023CITY OF WHITE ROCK -  BC                          ,l
-'5510290062995740',CREDIT,2023-08-11,703.0,[DN]BUY LOW FOODS   PAY/PAY                                                    ,i
-'5510290062995740',DEBIT,2023-08-11,-3.0,[OP]ONLINE PURCHASE 10AUG2023CITY OF WHITE ROCK-PA BC                          ,l
-'5510290062995740',DEBIT,2023-08-14,-4.19,[PR]NATURE'S FARE M                                                            ,f
-'5510290062995740',DEBIT,2023-08-14,-0.85,[PR]NATURE'S FARE M                                                            ,f
-'5510290062995740',DEBIT,2023-08-14,-3.6,[PR]NATURE'S FARE M                                                            ,f
-'5510290062995740',DEBIT,2023-08-14,-27.3,[PR]J.SWEETS STORE                                                             ,f
-'5510290062995740',CREDIT,2023-08-16,1250.0,[CW]MOBILE CHEQUE DEPOSIT                                                      ,i
-'5510290062995740',DEBIT,2023-08-16,-12.35,[PR]UP EXPRESS PEAR                                                            ,c
-'5510290062995740',DEBIT,2023-08-16,-24.0,[PR]PRESTO UNION ST                                                            ,c
-'5510290062995740',DEBIT,2023-08-16,-70.0,[CW]INTERAC ETRNSFR SENT     AMYYYYYY                 20232281758VBHABX        ,n
-'5510290062995740',DEBIT,2023-08-16,-11.85,[PR]YIN JI CHANG FE                                                            ,f
-'5510290062995740',DEBIT,2023-08-16,-6.79,[OP]ONLINE PURCHASE 15AUG2023MIHOYO LIMITED HKG                                ,h
-'5510290062995740',DEBIT,2023-08-17,-30.28,[PR]MR TONKATSU                                                                ,f
-'5510290062995740',DEBIT,2023-08-17,-3.0,[CW]INTERAC ETRNSFR SENT     AMYYYYYY                 20232291906DW22S2        ,f
-'5510290062995740',DEBIT,2023-08-17,-9.15,[PR]CHAPAYOM                                                                  ,d
+'00000',calculated,2023-07-10,4225.71,calculated balance (from previous remains)                          ,i
+'00000',calculated,2023-07-10,-3342.0,calculated transferred to savings                          ,sv
+'00000',CREDIT,2023-07-10,3000.0,[CW]INTERAC ETRNSFR AD RECVD PEIYING                  20231902118AR7NGD        ,r
+'00000',DEBIT,2023-07-10,-34.64,[PR]SHOPPERS DRUG M                                                            ,n
+'00000',DEBIT,2023-07-12,-80.0,[PR]ESSO 7-ELEVEN 3                                                            ,c
+'00000',DEBIT,2023-07-13,-34.72,[PR]GACHA HOBBIES                                                              ,l
+'00000',DEBIT,2023-07-13,-10.49,[PR]GRAM CAFE   PAN                                                            ,f
+'00000',DEBIT,2023-07-14,-34.31,[OP]ONLINE PURCHASE 14JUL2023STEAMGAMES.COM 425952 WA                          ,g
+'00000',DEBIT,2023-07-17,-5.72,[PR]STARBUCKS 66551                                                            ,d
+'00000',DEBIT,2023-07-17,-6.56,[PR]STARBUCKS 66551                                                            ,d
+'00000',DEBIT,2023-07-17,-5.72,[PR]STARBUCKS 66551                                                            ,d
+'00000',CREDIT,2023-07-17,5.72,[EC]STARBUCKS 66551                                                            ,d
+'00000',DEBIT,2023-07-18,-6.79,[OP]ONLINE PURCHASE 17JUL2023MIHOYO LIMITED HKG                                ,h
+'00000',DEBIT,2023-07-19,-24.99,[OP]ONLINE PURCHASE 19JUL2023COGNOSPHERE PTE. LTD SGP                          ,h
+'00000',DEBIT,2023-07-21,-4.19,[PR]NATURE'S FARE M                                                            ,f
+'00000',CREDIT,2023-07-24,706.57,[CW]MOBILE CHEQUE DEPOSIT                                                      ,i
+'00000',DEBIT,2023-07-24,-600.0,[IB]           2142 WESTERN P                                                  ,h
+'00000',DEBIT,2023-07-24,-80.0,[PR]ELGIN ESSO                                                                 ,c
+'00000',DEBIT,2023-07-24,-6.35,[PR]STARBUCKS 66551                                                            ,d
+'00000',DEBIT,2023-07-24,-14.31,[OP]ONLINE PURCHASE 23JUL2023AMZN MKTP CA BK2A58SD ON                          ,o
+'00000',DEBIT,2023-07-25,-17.86,[CW]INTERAC ETRNSFR SENT     MICHELLE                 20232060327K4H9GQ        ,l
+'00000',DEBIT,2023-07-26,-60.0,[PR]ELGIN ESSO                                                                 ,c
+'00000',DEBIT,2023-07-26,-658.0,[CW] TF 0782#8627-331                                                          ,sv
+'00000',DEBIT,2023-07-26,-7.0,[CW]INTERAC ETRNSFR SENT     MICHELLE                 20232071852VVA4CX        ,l
+'00000',CREDIT,2023-07-28,269.12,[DN]BUY LOW FOODS   PAY/PAY                                                    ,i
+'00000',DEBIT,2023-07-28,-6.29,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-07-28,-10.74,[OP]ONLINE PURCHASE 28JUL2023AMZN MKTP CA TH7GX8CU ON                          ,o
+'00000',DEBIT,2023-07-31,-11.95,[SC]PLUS PLAN                                                                  ,n
+'00000',DEBIT,2023-07-31,-4.19,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-07-31,-1.67,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-07-31,-4.39,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-07-31,-60.0,[CW]INTERAC ETRNSFR SENT     SHANG                    20232120212DRFDMJ        ,c
+'00000',DEBIT,2023-07-31,-5.72,[PR]STARBUCKS 66551                                                            ,d
+'00000',DEBIT,2023-07-31,-8.75,[SC]EXCESS ITEMS  07 AT $1.25                                                  ,n
+'00000',DEBIT,2023-08-04,-7.82,[PR]SAVE ON FOODS #                                                            ,d
+'00000',CREDIT,2023-08-08,8.48,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
+'00000',CREDIT,2023-08-08,5.04,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
+'00000',CREDIT,2023-08-08,19.28,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
+'00000',DEBIT,2023-08-08,-122.12,[OP]ONLINE PURCHASE  6AUG2023TAOBAO.COM GBR                                    ,o
+'00000',DEBIT,2023-08-08,-80.0,[PR]CHV43076 67TH                                                              ,c
+'00000',CREDIT,2023-08-08,5.01,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
+'00000',CREDIT,2023-08-08,8.48,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
+'00000',DEBIT,2023-08-08,-118.19,[OP]ONLINE PURCHASE  5AUG2023TAOBAO.COM ENG                                    ,o
+'00000',CREDIT,2023-08-08,4.94,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
+'00000',CREDIT,2023-08-08,4.94,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
+'00000',CREDIT,2023-08-08,4.94,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
+'00000',CREDIT,2023-08-08,35.21,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
+'00000',CREDIT,2023-08-08,18.82,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
+'00000',DEBIT,2023-08-08,-120.08,[OP]ONLINE PURCHASE  5AUG2023TAOBAO.COM GBR                                    ,o
+'00000',CREDIT,2023-08-08,4.94,[OR]ONLINE REFUND    7AUG2023TAOBAO.COM GBR                                    ,o
+'00000',CREDIT,2023-08-09,659.4,[CW]MOBILE CHEQUE DEPOSIT                                                      ,i
+'00000',DEBIT,2023-08-10,-129.99,[OP]ONLINE PURCHASE 10AUG2023COGNOSPHERE PTE. LTD SGP                          ,h
+'00000',DEBIT,2023-08-10,-129.99,[OP]ONLINE PURCHASE 10AUG2023COGNOSPHERE PTE. LTD SGP                          ,h
+'00000',DEBIT,2023-08-10,-129.99,[OP]ONLINE PURCHASE 10AUG2023COGNOSPHERE PTE. LTD SGP                          ,h
+'00000',DEBIT,2023-08-10,-129.99,[OP]ONLINE PURCHASE  9AUG2023COGNOSPHERE PTE. LTD. SGP                         ,h
+'00000',DEBIT,2023-08-10,-129.99,[OP]ONLINE PURCHASE  9AUG2023COGNOSPHERE PTE. LTD. SGP                         ,h
+'00000',CREDIT,2023-08-10,5.08,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
+'00000',CREDIT,2023-08-10,19.38,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
+'00000',CREDIT,2023-08-10,8.7,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
+'00000',CREDIT,2023-08-10,5.08,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
+'00000',CREDIT,2023-08-10,5.08,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
+'00000',CREDIT,2023-08-10,5.19,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
+'00000',CREDIT,2023-08-10,5.08,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
+'00000',CREDIT,2023-08-10,19.78,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
+'00000',CREDIT,2023-08-10,8.7,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
+'00000',CREDIT,2023-08-10,36.12,[OR]ONLINE REFUND    9AUG2023TAOBAO.COM ENG                                    ,o
+'00000',DEBIT,2023-08-11,-3.0,[OP]ONLINE PURCHASE 10AUG2023CITY OF WHITE ROCK -  BC                          ,l
+'00000',CREDIT,2023-08-11,703.0,[DN]BUY LOW FOODS   PAY/PAY                                                    ,i
+'00000',DEBIT,2023-08-11,-3.0,[OP]ONLINE PURCHASE 10AUG2023CITY OF WHITE ROCK-PA BC                          ,l
+'00000',DEBIT,2023-08-14,-4.19,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-08-14,-0.85,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-08-14,-3.6,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-08-14,-27.3,[PR]J.SWEETS STORE                                                             ,f
+'00000',CREDIT,2023-08-16,1250.0,[CW]MOBILE CHEQUE DEPOSIT                                                      ,i
+'00000',DEBIT,2023-08-16,-12.35,[PR]UP EXPRESS PEAR                                                            ,c
+'00000',DEBIT,2023-08-16,-24.0,[PR]PRESTO UNION ST                                                            ,c
+'00000',DEBIT,2023-08-16,-70.0,[CW]INTERAC ETRNSFR SENT     AMYYYYYY                 20232281758VBHABX        ,n
+'00000',DEBIT,2023-08-16,-11.85,[PR]YIN JI CHANG FE                                                            ,f
+'00000',DEBIT,2023-08-16,-6.79,[OP]ONLINE PURCHASE 15AUG2023MIHOYO LIMITED HKG                                ,h
+'00000',DEBIT,2023-08-17,-30.28,[PR]MR TONKATSU                                                                ,f
+'00000',DEBIT,2023-08-17,-3.0,[CW]INTERAC ETRNSFR SENT     AMYYYYYY                 20232291906DW22S2        ,f
+'00000',DEBIT,2023-08-17,-9.15,[PR]CHAPAYOM                                                                  ,d
+'00000',DEBIT,2023-08-18,-31.5,[OP]ONLINE PURCHASE 15AUG2023AIR CAN  001442505508 MB                          ,o
+'00000',DEBIT,2023-08-21,-15.49,[PR]THE ALLEY                                                                  ,d
+'00000',DEBIT,2023-08-21,-13.75,[PR]YIN JI CHANG FE                                                            ,f
+'00000',DEBIT,2023-08-21,-16.95,[PR]CHAPAYOM                                                                   ,d
+'00000',DEBIT,2023-08-21,-20.0,[PR]PRESTO WELLSLEY                                                            ,c
+'00000',DEBIT,2023-08-21,-11.85,[PR]IKEA NORTH YORK                                                            ,f
+'00000',DEBIT,2023-08-22,-2.79,[PR]SHOPPERS DRUG M                                                            ,d
+'00000',DEBIT,2023-08-22,-8.79,[PR]HATTENDO YORKDA                                                            ,f
+'00000',DEBIT,2023-08-22,-77.97,[PR]502 - SEPHORA                                                              ,o
+'00000',DEBIT,2023-08-22,-13.88,[PR]NYF #3261                                                                  ,f
+'00000',DEBIT,2023-08-22,-9.03,[PR]*RFBT-NEW YORKD                                                            ,d
+'00000',DEBIT,2023-08-22,-7.9,[PR]SHOPPERS DRUG M                                                            ,n
+'00000',DEBIT,2023-08-23,-7.92,[PR]THE ALLEY                                                                  ,d
+'00000',DEBIT,2023-08-24,-45.9,[PR]GURUME SUSHI                                                               ,f
+'00000',DEBIT,2023-08-24,-3.3,[PR]PRES/5CC59D9WTN                                                            ,c
+'00000',CREDIT,2023-08-25,336.52,[DN]BUY LOW FOODS   PAY/PAY                                                    ,i
+'00000',DEBIT,2023-08-25,-39.53,[PR]SP MEGA SHOE SA                                                            ,o
+'00000',DEBIT,2023-08-25,-38.17,[CW]INTERAC ETRNSFR SENT     AMYYYYYY                 20232372241A6C9ED        ,c
+'00000',DEBIT,2023-08-28,-3.3,[PR]PRES/5CCPJM59BV                                                            ,c
+'00000',DEBIT,2023-08-28,-1.11,[OP]RECURRING PYMNT 27AUG2023APPLE.COM/BILL ON                                 ,o
+'00000',DEBIT,2023-08-28,-3.3,[PR]PRES/5CD45BCWF8                                                            ,c
+'00000',DEBIT,2023-08-28,-17.79,[PR]PRES/5CD3P52SSP                                                            ,c
+'00000',DEBIT,2023-08-28,-14.68,[PR]WENDY?S RESTAUR                                                            ,f
+'00000',DEBIT,2023-08-28,-37.01,[CW]INTERAC ETRNSFR SENT     AMYYYYYY                 20232391210BRDZWH        ,o
+'00000',DEBIT,2023-08-28,-5.67,[PR]KIBO MARKET UNI                                                            ,d
+'00000',DEBIT,2023-08-28,-3.3,[PR]PRES/5CD22CRL2X                                                            ,c
+'00000',DEBIT,2023-08-28,-7.9,[PR]SHOPPERS DRUG M                                                            ,n
+'00000',DEBIT,2023-08-28,-56.5,[PR]SQ *LOST ART ST                                                            ,l
+'00000',DEBIT,2023-08-28,-60.0,[PR]SQ *3334586 NOV                                                            ,l
+'00000',DEBIT,2023-08-28,-40.0,[PR]SQ *JAJU CREATI                                                            ,l
+'00000',DEBIT,2023-08-28,-7.85,[PR]SUSHI SHOP                                                                 ,d
+'00000',DEBIT,2023-08-28,-19.21,[PR]SANSOTEI RAMEN                                                             ,f
+'00000',DEBIT,2023-08-28,-9.0,[CW]INTERAC ETRNSFR SENT     HUI                      20232381249EZBY2H        ,l
+'00000',DEBIT,2023-08-28,-9.0,[CW]INTERAC ETRNSFR SENT     HUI                      20232381245QPEFUA        ,l
+'00000',DEBIT,2023-08-28,-20.0,[PR]SQ *3334586 NOV                                                            ,l
+'00000',DEBIT,2023-08-28,-30.5,[PR]PANDA HOBBY                                                                ,l
+'00000',DEBIT,2023-08-28,-3.3,[PR]PRES/5CCNJGJLDV                                                            ,c
+'00000',DEBIT,2023-08-28,-20.5,[PR]SQ *NINJAPOOP G                                                            ,l
+'00000',DEBIT,2023-08-29,-16.14,[PR]CANADIAN TIRE #                                                            ,n
+'00000',DEBIT,2023-08-29,-9.55,[PR]TIGER SUGAR DT                                                             ,d
