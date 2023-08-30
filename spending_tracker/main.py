@@ -2,36 +2,12 @@ import subprocess
 import os
 import csv
 from datetime import datetime
-import tkinter as tk
-from tkinter import ttk
-from pandastable import Table
+from disp import *
+import warnings
 
 from shared_info import *
 
-# write documentation
-# possibly make gui with tkinter
-# ERROR HANDLE: throw error for date entered out of bound, ask user to input correct date in range and display date range in record
-# problems solve: quit anywhere during the process
-# problem solve: after data entry, must restart entire program to ensure that data is updated
-
-# Display monthly data 
-class DataFrameTableApp(tk.Frame):
-    def __init__(self, parent=None, dataframe=None):
-        tk.Frame.__init__(self, parent)
-        self.dataframe = dataframe
-        self.parent = parent
-        self.main = self._frame = ttk.Frame(self.parent)
-        self.main.pack(fill='both', expand=True)
-
-        # Create a frame to hold the table
-        self.table_frame = ttk.Frame(self.main)
-        self.table_frame.pack(fill='both', expand=True)
-
-        # Create the table using PandasTable
-        self.table = Table(self.table_frame, dataframe=self.dataframe, cellwidth = 250, cellheight = 30)
-        self.table.show()
-
-
+#function to let user choose what function to perform
 def selector(): 
     print()
     selector = input("SELECT WHAT TO DO: \n \
@@ -40,6 +16,7 @@ def selector():
                      Enter '3' to extract record for selected categories and date\n \
                      Enter '4' to update monthly expense data \n \
                      Enter '5' to compare total expense across each monthly period \n \
+                     Enter '6' to see line graph comparing Covered Balance, Personal Balance, and Savings Balance over time \n \
                      Enter 'q' to quit: \n")
     return selector
 
@@ -61,32 +38,39 @@ if os.path.isfile(p_file_path):
         elif user_sel == '3': 
             print(categories_dict)
             print()
-            q_categories = input("Enter the character symbols for the categories you would like to extract. \n \
-            For example, to select the car, study, and music categories: c,i,m \n \
-            Your Entry: ")
-            q_categories = q_categories.split(',')
             
+            p_or_c = input("If you want to extract covered spending data, enter 'c'. \n If you want to extract personal spending data, enter 'p'.\n If you want to select specific categories, press enter. \n")
+            
+            if p_or_c == 'p': 
+                q_categories = personal_balance
+            elif p_or_c == 'c': 
+                q_categories = covered_balance
+            else: 
+                q_categories = input("Enter the character symbols for the categories you would like to extract. \n \
+                For example, to select the car, study, and music categories: c,i,m \n \
+                Your Entry: ")
+                q_categories = q_categories.split(',')
+                  
             q_date = input("Do you want to extract all record on the selected categories? Enter 'y' for yes, else enter: \n")
 
             extracted_df = pd.DataFrame()
             if q_date == 'y': 
                 extracted_df = extract_all(q_categories)
-                print(extracted_df)
 
             else: 
+                print("Enter range of date between: " + str(p_df['Date Posted'][0]) + " to " + str(p_df['Date Posted'].iloc[-1]) + ". \n")
                 q_range_start = input("Enter start date in form YYYY-MM-DD: \n")
                 q_range_end = input("Enter end date in form YYYY-MM-DD: \n")
                 extracted_df = extract_within_range(q_categories, q_range_start, q_range_end)
-                print(extracted_df)
 
-            print()
-            for key in q_categories: 
-                print(categories_dict[key])
-            print("THE SUMMED BALANCE OF THE ABOVE CATEGORIES IS:  $" + str(extracted_df[' Transaction Amount'].sum()) + ". \n")
-                
+            extracted_df['label'] = extracted_df['label'].replace(categories_dict)
+            list_categories = extracted_df['label'].unique().tolist()
+
+            description = "THE SUMMED BALANCE OF THE CATEGORIES: " + str(list_categories) +  " IS:  $" + str(extracted_df[' Transaction Amount'].sum()) + ". \n"
+            show_df_with_description(extracted_df, "Extracted Spending Data", description)
+
         elif user_sel == '4': 
 
-            
             if os.path.isfile(m_file_path): 
                 print()
                 m_df = pd.read_csv(m_file_path)
@@ -102,11 +86,10 @@ if os.path.isfile(p_file_path):
                 
                 added_month_df = calc_month_data(start_date, end_date)
                 
-                m_df.drop(m_df.index[-1], inplace=True)
-                
+                m_df_copy = m_df.drop(m_df.index[-1], inplace=True)
+
                 m_df = m_df._append(added_month_df, ignore_index=True)
                 
-                #very unfinished, replace old m_df csv with new one
                                 
             else: 
                 print("monthly file initiated. \n")
@@ -120,24 +103,22 @@ if os.path.isfile(p_file_path):
 
             if os.path.isfile(m_file_path): 
                 display_df = pd.read_csv(m_file_path)
-                display_df = display_df.applymap(lambda x: '{:.2f}'.format(x) if isinstance(x, (int, float)) else x)
-
-                pd.set_option('display.float_format',lambda x: '%.3f' % x)
-                root = tk.Tk()
-                root.title("Spending Data By Month")
-                app = DataFrameTableApp(root, dataframe=display_df)
-                
-                app.pack(fill='both', expand=True)
-
-                root.mainloop()
+                show_df_with_description(display_df, "Monthly Spending Data")
 
 
             else: 
                 print("Monthly record file does not exist, cannot display. \n")
                 
+        elif user_sel == '6': 
+            if os.path.isfile(m_file_path): 
+                month_df = pd.read_csv(m_file_path)
+                show_c_p_s_line_graph(month_df, "Month", "Covered balance", "Personal balance", "Savings")
 
-            
-        elif user_sel == 'q': 
+            else: 
+                print("Monthly record file does not exist, cannot display. \n")
+        
+        
+        else: 
             break      
 
         user_sel = selector()
