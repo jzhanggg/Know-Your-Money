@@ -5,7 +5,7 @@ This project aims to help me keep track of my spending on my BMO Debit Card and 
 # What it does
 It reads the statement files (in .csv format) a user downloaded from the BMO online banking site, allowing them to categorize each of their transactions quickly, and store the classified data locally. The user can perform the following operations and analysis of the data: 
 
-**1. Categorize transaction data from statement files and save them locally**
+**1. Categorize new transaction data from statement files and save them locally**
 
 **2. See spending overview: by category + income vs. expense**
 
@@ -26,3 +26,4 @@ It reads the statement files (in .csv format) a user downloaded from the BMO onl
 4. Follow console prompts to create a categorized personal record file for local storage.
 5. Restart the program.
 6. select functions to perform as prompted.
+7. Feel free to delete the imported statement file after the transactions have been recorded. 
