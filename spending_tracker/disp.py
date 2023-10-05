@@ -27,7 +27,7 @@ class DataFrameTableApp(tk.Frame):
         self.table_frame.pack(fill='both', expand=True)
 
         # Create the table using PandasTable
-        self.table = Table(self.table_frame, dataframe=self.dataframe, cellwidth=250, cellheight=30)
+        self.table = Table(self.table_frame, dataframe=self.dataframe, cellwidth=250, cellheight=50)
         self.table.show()
 
 def show_df_with_description(display_df, str_title, description = None): 

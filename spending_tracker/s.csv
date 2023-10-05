@@ -1,46 +1,58 @@
-﻿Following data is valid as of 20230829185514 (Year/Month/Day/Hour/Minute/Second)
+﻿Following data is valid as of 20231005004643 (Year/Month/Day/Hour/Minute/Second)
 
 
 First Bank Card,Transaction Type,Date Posted, Transaction Amount,Description
 
 
-'00000',DEBIT,20230818,-31.5,[OP]ONLINE PURCHASE 15AUG2023AIR CAN  001442505508 MB                          
-'00000',DEBIT,20230821,-15.49,[PR]THE ALLEY                                                                  
-'00000',DEBIT,20230821,-13.75,[PR]YIN JI CHANG FE                                                            
-'00000',DEBIT,20230821,-16.95,[PR]CHAPAYOM                                                                   
-'00000',DEBIT,20230821,-20.0,[PR]PRESTO WELLSLEY                                                            
-'00000',DEBIT,20230821,-11.85,[PR]IKEA NORTH YORK                                                            
-'00000',DEBIT,20230822,-2.79,[PR]SHOPPERS DRUG M                                                            
-'00000',DEBIT,20230822,-8.79,[PR]HATTENDO YORKDA                                                            
-'00000',DEBIT,20230822,-77.97,[PR]502 - SEPHORA                                                              
-'00000',DEBIT,20230822,-13.88,[PR]NYF #3261                                                                  
-'00000',DEBIT,20230822,-9.03,[PR]*RFBT-NEW YORKD                                                            
-'00000',DEBIT,20230822,-7.9,[PR]SHOPPERS DRUG M                                                            
-'00000',DEBIT,20230823,-7.92,[PR]THE ALLEY                                                                  
-'00000',DEBIT,20230824,-3.3,[PR]PRES/5CC59D9WTN                                                            
-'00000',DEBIT,20230824,-45.9,[PR]GURUME SUSHI                                                               
-'00000',CREDIT,20230825,336.52,[DN]BUY LOW FOODS   PAY/PAY                                                    
-'00000',DEBIT,20230825,-39.53,[PR]SP MEGA SHOE SA                                                            
-'00000',DEBIT,20230825,-38.17,[CW]INTERAC ETRNSFR SENT     AMYYYYYY                 20232372241A6C9ED        
-'00000',DEBIT,20230828,-3.3,[PR]PRES/5CCNJGJLDV                                                            
-'00000',DEBIT,20230828,-30.5,[PR]PANDA HOBBY                                                                
-'00000',DEBIT,20230828,-60.0,[PR]SQ *3334586 NOV                                                            
-'00000',DEBIT,20230828,-20.0,[PR]SQ *3334586 NOV                                                            
-'00000',DEBIT,20230828,-9.0,[CW]INTERAC ETRNSFR SENT     HUI                      20232381245QPEFUA        
-'00000',DEBIT,20230828,-9.0,[CW]INTERAC ETRNSFR SENT     HUI                      20232381249EZBY2H        
-'00000',DEBIT,20230828,-19.21,[PR]SANSOTEI RAMEN                                                             
-'00000',DEBIT,20230828,-7.85,[PR]SUSHI SHOP                                                                 
-'00000',DEBIT,20230828,-40.0,[PR]SQ *JAJU CREATI                                                            
-'00000',DEBIT,20230828,-20.5,[PR]SQ *NINJAPOOP G                                                            
-'00000',DEBIT,20230828,-56.5,[PR]SQ *LOST ART ST                                                            
-'00000',DEBIT,20230828,-3.3,[PR]PRES/5CCPJM59BV                                                            
-'00000',DEBIT,20230828,-7.9,[PR]SHOPPERS DRUG M                                                            
-'00000',DEBIT,20230828,-3.3,[PR]PRES/5CD22CRL2X                                                            
-'00000',DEBIT,20230828,-5.67,[PR]KIBO MARKET UNI                                                            
-'00000',DEBIT,20230828,-37.01,[CW]INTERAC ETRNSFR SENT     AMYYYYYY                 20232391210BRDZWH        
-'00000',DEBIT,20230828,-14.68,[PR]WENDY?S RESTAUR                                                            
-'00000',DEBIT,20230828,-17.79,[PR]PRES/5CD3P52SSP                                                            
-'00000',DEBIT,20230828,-3.3,[PR]PRES/5CD45BCWF8                                                            
-'00000',DEBIT,20230828,-1.11,[OP]RECURRING PYMNT 27AUG2023APPLE.COM/BILL ON                                 
-'00000',DEBIT,20230829,-16.14,[PR]CANADIAN TIRE #                                                            
-'00000',DEBIT,20230829,-9.55,[PR]TIGER SUGAR DT                                                             
+'5510290062995740',DEBIT,20230905,-3.6,[PR]NATURE'S FARE M                                                            
+'5510290062995740',DEBIT,20230905,-7.13,[PR]NATURE'S FARE M                                                            
+'5510290062995740',DEBIT,20230905,-1.07,[PR]NATURE'S FARE M                                                            
+'5510290062995740',DEBIT,20230905,-55.88,[OP]ONLINE PURCHASE  3SEP2023TAOBAO.COM                                        
+'5510290062995740',DEBIT,20230905,-80.0,[PR]ESSO 7-ELEVEN 3                                                            
+'5510290062995740',CREDIT,20230908,98.62,[DN]BUY LOW FOODS   PAY/PAY                                                    
+'5510290062995740',DEBIT,20230908,-80.0,[PR]SHELL C01029                                                               
+'5510290062995740',DEBIT,20230911,-7.97,[PR]NATURE'S FARE M                                                            
+'5510290062995740',DEBIT,20230911,-9.89,[PR]NATURE'S FARE M                                                            
+'5510290062995740',DEBIT,20230911,-10.12,[PR]NATURE'S FARE M                                                            
+'5510290062995740',CREDIT,20230911,86.96,[CW]MOBILE CHEQUE DEPOSIT                                                      
+'5510290062995740',CREDIT,20230911,445.79,[CW]MOBILE CHEQUE DEPOSIT                                                      
+'5510290062995740',DEBIT,20230911,-14.55,[OP]RECURRING PYMNT 10SEP2023APPLE.COM/BILL ON                                 
+'5510290062995740',DEBIT,20230913,-4.46,[PR]STARBUCKS 66552                                                            
+'5510290062995740',DEBIT,20230913,-80.0,[PR]ELGIN ESSO                                                                 
+'5510290062995740',DEBIT,20230914,-7.6,[OP]RECURRING PYMNT 14SEP2023APPLE.COM/BILL ON                                 
+'5510290062995740',DEBIT,20230915,-110.0,[CW]INTERAC ETRNSFR SENT     WYF                      20232581101EFUUEW        
+'5510290062995740',DEBIT,20230915,-4.71,[PR]STARBUCKS 66552                                                            
+'5510290062995740',DEBIT,20230918,-6.97,[PR]NATURE'S FARE M                                                            
+'5510290062995740',DEBIT,20230918,-5.5,[PR]NATURE'S FARE M                                                            
+'5510290062995740',DEBIT,20230918,-95.19,[PR]NATURE'S FARE M                                                            
+'5510290062995740',DEBIT,20230918,-92.4,[PR]NATURE'S FARE M                                                            
+'5510290062995740',DEBIT,20230918,-2.81,[PR]NATURE'S FARE M                                                            
+'5510290062995740',DEBIT,20230918,-3.6,[PR]NATURE'S FARE M                                                            
+'5510290062995740',DEBIT,20230918,-4.46,[PR]STARBUCKS 66552                                                            
+'5510290062995740',CREDIT,20230922,477.69,[DN]BUY LOW FOODS   PAY/PAY                                                    
+'5510290062995740',CREDIT,20230922,90.2,[CW]INTERAC ETRNSFR AD RECVD LOK LAM                  20232650047DRAQKQ        
+'5510290062995740',DEBIT,20230922,-4.15,[PR]STARBUCKS 66552                                                            
+'5510290062995740',DEBIT,20230922,-14.66,[PR]H-MART EXPRESS                                                             
+'5510290062995740',DEBIT,20230925,-7.97,[PR]NATURE'S FARE M                                                            
+'5510290062995740',DEBIT,20230925,-6.29,[PR]NATURE'S FARE M                                                            
+'5510290062995740',DEBIT,20230925,-3.6,[PR]NATURE'S FARE M                                                            
+'5510290062995740',DEBIT,20230925,-4.46,[PR]STARBUCKS 66552                                                            
+'5510290062995740',DEBIT,20230925,-80.0,[PR]ELGIN ESSO                                                                 
+'5510290062995740',DEBIT,20230925,-21.22,[OP]ONLINE PURCHASE 22SEP2023CHEGG  ORDER CA                                   
+'5510290062995740',DEBIT,20230925,-134.99,[OP]ONLINE PURCHASE 23SEP2023MIHOYO LIMITED HKG                                
+'5510290062995740',DEBIT,20230927,-4.46,[PR]STARBUCKS 66552                                                            
+'5510290062995740',DEBIT,20230927,-37.5,[PR]UNCLE TETSU MET                                                            
+'5510290062995740',DEBIT,20230927,-9.44,[PR]NYF #3236                                                                  
+'5510290062995740',DEBIT,20230927,-6.79,[OP]ONLINE PURCHASE 27SEP2023HOYOVERSE SGP                                     
+'5510290062995740',DEBIT,20230929,-7.35,[PR]CHATIME RICHMON                                                            
+'5510290062995740',DEBIT,20230929,-11.95,[SC]PLUS PLAN                                                                  
+'5510290062995740',CREDIT,20230929,11.95,[SC]FULL PLAN FEE REBATE                                                       
+'5510290062995740',DEBIT,20230929,-23.75,[SC]EXCESS ITEMS  19 AT $1.25                                                  
+'5510290062995740',DEBIT,20231003,-27.3,[PR]J.SWEETS STORE                                                             
+'5510290062995740',DEBIT,20231003,-6.15,[PR]SHARETEA                                                                   
+'5510290062995740',DEBIT,20231003,-4.19,[PR]SAVE ON FOODS #                                                            
+'5510290062995740',DEBIT,20231003,-6.25,[PR]STARBUCKS 66551                                                            
+'5510290062995740',DEBIT,20231003,-15.74,[OP]RECURRING PYMNT 30SEP2023APPLE.COM/BILL ON                                 
+'5510290062995740',DEBIT,20231003,-80.0,[PR]ELGIN ESSO                                                                 
+'5510290062995740',DEBIT,20231004,-4.46,[PR]STARBUCKS 66552                                                            
+'5510290062995740',CREDIT,20231005,193.0,[DN]CANADA          FPT/FPT                                                    

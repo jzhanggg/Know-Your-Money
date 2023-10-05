@@ -121,3 +121,74 @@ First Bank Card,Transaction Type,Date Posted, Transaction Amount,Description,lab
 '00000',DEBIT,2023-08-28,-20.5,[PR]SQ *NINJAPOOP G                                                            ,l
 '00000',DEBIT,2023-08-29,-16.14,[PR]CANADIAN TIRE #                                                            ,n
 '00000',DEBIT,2023-08-29,-9.55,[PR]TIGER SUGAR DT                                                             ,d
+'00000',DEBIT,2023-08-30,-7.35,[PR]THE ALLEY                                                                  ,d
+'00000',DEBIT,2023-08-30,-19.98,[PR]SHOPPERS DRUG M                                                            ,n
+'00000',DEBIT,2023-08-31,-26.0,[CW]INTERAC ETRNSFR SENT     AMYYYYYY                 202324311599SHKC9        ,o
+'00000',DEBIT,2023-08-31,-15.35,[PR]MCDONALD'S #290                                                            ,f
+'00000',DEBIT,2023-08-31,-3.3,[PR]PRES/5CDN096FQJ                                                            ,c
+'00000',DEBIT,2023-08-31,-5.0,[PR]SQ *BILLBROOKE                                                             ,d
+'00000',DEBIT,2023-08-31,-11.95,[SC]PLUS PLAN                                                                  ,n
+'00000',DEBIT,2023-08-31,-43.75,[SC]EXCESS ITEMS  35 AT $1.25                                                  ,n
+'00000',DEBIT,2023-09-01,-31.5,[OP]ONLINE PURCHASE  1SEP2023AIR CAN  001442516071 MB                          ,n
+'00000',DEBIT,2023-09-01,-7.33,[PR]1819-TOR RELAY                                                             ,f
+'00000',DEBIT,2023-09-01,-18.07,[PR]YYZ BENTO SUSHI                                                            ,f
+'00000',DEBIT,2023-09-01,-12.35,[PR]UP EXPRESS UNIO                                                            ,c
+'00000',DEBIT,2023-09-01,-3.3,[PR]PRES/5C52P6RM6J                                                            ,c
+'00000',DEBIT,2023-09-01,-9.55,[PR]TIGER SUGAR DT                                                             ,d
+'00000',DEBIT,2023-09-01,-3.3,[PR]PRES/5C5257Q5HC                                                            ,c
+'00000',DEBIT,2023-09-01,-17.94,[PR]EGG CLUB WELLES                                                            ,f
+'00000',DEBIT,2023-09-01,-3.39,[PR]DOLLARAMA #1036                                                            ,n
+'00000',DEBIT,2023-09-01,-3.3,[PR]PRES/5CD7N2PGQT                                                            ,c
+'00000',DEBIT,2023-09-01,-60.0,[CW]INTERAC ETRNSFR SENT     SHANG                    20232441745QW2Q2C        ,c
+'00000',DEBIT,2023-09-05,-55.88,[OP]ONLINE PURCHASE  3SEP2023TAOBAO.COM                                        ,o
+'00000',DEBIT,2023-09-05,-3.6,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-09-05,-7.13,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-09-05,-1.07,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-09-05,-80.0,[PR]ESSO 7-ELEVEN 3                                                            ,c
+'00000',CREDIT,2023-09-08,98.62,[DN]BUY LOW FOODS   PAY/PAY                                                    ,i
+'00000',DEBIT,2023-09-08,-80.0,[PR]SHELL C01029                                                               ,c
+'00000',DEBIT,2023-09-11,-7.97,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-09-11,-9.89,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-09-11,-10.12,[PR]NATURE'S FARE M                                                            ,f
+'00000',CREDIT,2023-09-11,86.96,[CW]MOBILE CHEQUE DEPOSIT                                                      ,i
+'00000',CREDIT,2023-09-11,445.79,[CW]MOBILE CHEQUE DEPOSIT                                                      ,i
+'00000',DEBIT,2023-09-11,-14.55,[OP]RECURRING PYMNT 10SEP2023APPLE.COM/BILL ON                                 ,h
+'00000',DEBIT,2023-09-13,-4.46,[PR]STARBUCKS 66552                                                            ,n
+'00000',DEBIT,2023-09-13,-80.0,[PR]ELGIN ESSO                                                                 ,c
+'00000',DEBIT,2023-09-14,-7.6,[OP]RECURRING PYMNT 14SEP2023APPLE.COM/BILL ON                                 ,h
+'00000',DEBIT,2023-09-15,-110.0,[CW]INTERAC ETRNSFR SENT     WYF                      20232581101EFUUEW        ,c
+'00000',DEBIT,2023-09-15,-4.71,[PR]STARBUCKS 66552                                                            ,n
+'00000',DEBIT,2023-09-18,-6.97,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-09-18,-5.5,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-09-18,-95.19,[PR]NATURE'S FARE M                                                            ,n
+'00000',DEBIT,2023-09-18,-92.4,[PR]NATURE'S FARE M                                                            ,n
+'00000',DEBIT,2023-09-18,-2.81,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-09-18,-3.6,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-09-18,-4.46,[PR]STARBUCKS 66552                                                            ,n
+'00000',DEBIT,2023-09-22,-4.15,[PR]STARBUCKS 66552                                                            ,n
+'00000',DEBIT,2023-09-22,-14.66,[PR]H-MART EXPRESS                                                             ,l
+'00000',CREDIT,2023-09-22,477.69,[DN]BUY LOW FOODS   PAY/PAY                                                    ,i
+'00000',CREDIT,2023-09-22,90.2,[CW]INTERAC ETRNSFR AD RECVD LOK LAM                  20232650047DRAQKQ        ,r
+'00000',DEBIT,2023-09-25,-7.97,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-09-25,-6.29,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-09-25,-3.6,[PR]NATURE'S FARE M                                                            ,f
+'00000',DEBIT,2023-09-25,-4.46,[PR]STARBUCKS 66552                                                            ,n
+'00000',DEBIT,2023-09-25,-80.0,[PR]ELGIN ESSO                                                                 ,c
+'00000',DEBIT,2023-09-25,-21.22,[OP]ONLINE PURCHASE 22SEP2023CHEGG  ORDER CA                                   ,s
+'00000',DEBIT,2023-09-25,-134.99,[OP]ONLINE PURCHASE 23SEP2023MIHOYO LIMITED HKG                                ,h
+'00000',DEBIT,2023-09-27,-9.44,[PR]NYF #3236                                                                  ,f
+'00000',DEBIT,2023-09-27,-6.79,[OP]ONLINE PURCHASE 27SEP2023HOYOVERSE SGP                                     ,h
+'00000',DEBIT,2023-09-27,-4.46,[PR]STARBUCKS 66552                                                            ,n
+'00000',DEBIT,2023-09-27,-37.5,[PR]UNCLE TETSU MET                                                            ,f
+'00000',DEBIT,2023-09-29,-7.35,[PR]CHATIME RICHMON                                                            ,d
+'00000',DEBIT,2023-09-29,-11.95,[SC]PLUS PLAN                                                                  ,n
+'00000',CREDIT,2023-09-29,11.95,[SC]FULL PLAN FEE REBATE                                                       ,n
+'00000',DEBIT,2023-09-29,-23.75,[SC]EXCESS ITEMS  19 AT $1.25                                                  ,n
+'00000',DEBIT,2023-10-03,-27.3,[PR]J.SWEETS STORE                                                             ,l
+'00000',DEBIT,2023-10-03,-6.15,[PR]SHARETEA                                                                   ,d
+'00000',DEBIT,2023-10-03,-4.19,[PR]SAVE ON FOODS #                                                            ,f
+'00000',DEBIT,2023-10-03,-6.25,[PR]STARBUCKS 66551                                                            ,d
+'00000',DEBIT,2023-10-03,-15.74,[OP]RECURRING PYMNT 30SEP2023APPLE.COM/BILL ON                                 ,s
+'00000',DEBIT,2023-10-03,-80.0,[PR]ELGIN ESSO                                                                 ,c
+'00000',DEBIT,2023-10-04,-4.46,[PR]STARBUCKS 66552                                                            ,n
+'00000',CREDIT,2023-10-05,193.0,[DN]CANADA          FPT/FPT                                                    ,i

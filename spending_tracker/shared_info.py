@@ -15,16 +15,16 @@ dep_path = os.path.join(current_directory, dep)
 categories_dict = {
     'h' : "Hoyoverse Games",
     'g' : "Non-Hoyoverse Games",
-    'c' : "car/transport",
+    'c' : "car/transport 汽车/交通费用",
     'l' : "leisure events",
     's' : "study",
     'm' : "music",
     'd' : "drinks personal",
     'f' : "food personal",
-    'n' : "necessary items/fees",
+    'n' : "necessary items/fees 生活刚需费用",
     'o' : "other personal items/fees",
     'i' : "income", 
-    'r' : "reimbursement from dad",
+    'r' : "reimbursement from dad 妈咪爹地给的money",
     'sv' : "savings: transferred to savings acc",
     'osv' : "out of savings: to chequing" 
 }

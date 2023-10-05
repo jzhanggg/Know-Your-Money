@@ -89,6 +89,8 @@ if os.path.isfile(p_file_path):
                 m_df_copy = m_df.drop(m_df.index[-1], inplace=True)
 
                 m_df = m_df._append(added_month_df, ignore_index=True)
+
+                print ("monthly file updated. \n")
                 
                                 
             else: 

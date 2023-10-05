@@ -98,7 +98,7 @@ def calc_month_data(str_date_start = None, str_date_end = None):
         date_end = datetime.strptime(str_date_end, "%Y-%m-%d").date()
         filtered_df = p_df[(p_df['Date Posted'] >= date_start) & (p_df['Date Posted'] <= date_end)]
     
-    filtered_df.loc[:, 'Date Posted'] = pd.to_datetime(filtered_df['Date Posted'])
+    pd.to_datetime(filtered_df['Date Posted'])
     unique_months = pd.to_datetime(filtered_df['Date Posted']).dt.to_period('M').unique()
 
     columns = list(categories_dict.values())
@@ -143,6 +143,8 @@ def calc_month_data(str_date_start = None, str_date_end = None):
                 month_df.loc[month_df_i_count, category] = sec_grouped_df.loc[0, category]
 
         month_df_i_count = month_df_i_count + 1
+    
+    month_df.fillna(0)
     
     return month_df
 
